@@ -16,6 +16,6 @@ export const prices = [
     storage: "2TB",
     price: "8.99/Month",
     classes: "bg-slate-700 text-white rounded-xl hover:bg-violet-700 duration-200"
- },
+  },  
 
 ]
