@@ -12,7 +12,7 @@ function App() {
           prices.map(price => (
           <Fragment key={price.title}>
               {/* First Col */}
-        <div  className={price.classes}>
+        <div  className={`${price.classes}`}>
           {/* Upper container */}
           <div className="p-8 mx-3 mt-3 rounded-l-xl bg-slate-800">
             <div className="text-center uppercase">{price.title}</div>
@@ -32,54 +32,54 @@ function App() {
               <div className="flex justify-center">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  class="w-5 h-5"
+                  className="w-5 h-5"
                   viewBox="0 0 24 24"
-                  stroke-width="2"
+                  strokeWidth="2"
                   stroke="currentColor"
                   fill="none"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
                 >
                   <path stroke="none" d="M0 0h24v24H0z" fill="none" />
                   <path d="M5 12l5 5l10 -10" />
                 </svg>
-                <div className="text-sm ml-1">1{price.storage} of storage</div>
+                <div className="text-sm ml-1">{price.storage} of storage</div>
               </div>
 
                {/* List Item 2*/}
               <div className="flex justify-center">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  class="w-5 h-5"
+                  className="w-5 h-5"
                   viewBox="0 0 24 24"
-                  stroke-width="2"
+                  strokeWidth="2"
                   stroke="currentColor"
                   fill="none"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
                 >
                   <path stroke="none" d="M0 0h24v24H0z" fill="none" />
                   <path d="M5 12l5 5l10 -10" />
                 </svg>
-                <div className="text-sm ml-1">Option to add members</div>
+                <div className="text-sm ml-1">{price.list1}</div>
               </div>
 
                {/* List Item 3*/}
               <div className="flex justify-center">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  class="w-5 h-5"
+                  className="w-5 h-5"
                   viewBox="0 0 24 24"
-                  stroke-width="2"
+                  strokeWidth="2"
                   stroke="currentColor"
                   fill="none"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
                 >
                   <path stroke="none" d="M0 0h24v24H0z" fill="none" />
                   <path d="M5 12l5 5l10 -10" />
                 </svg>
-                <div className="text-sm ml-1">Extra member benefits</div>
+                <div className="text-sm ml-1">{price.list2}</div>
               </div>
             </div>
           </div>
